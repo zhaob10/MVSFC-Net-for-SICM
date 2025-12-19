@@ -1,0 +1,2 @@
+CUDA_VISIBLE_DEVICES=0,2 python TrainCodec.py --gpu --train_dataset ../InStereo2K/Train_512.hdf5 --eval_dataset ../InStereo2K/Eval.hdf5 --lambda_weight 1024 --lr 1e-4 --max_epoch 501 --batch 2 --pretrained Experiments/Codec_Auto_1024.pth --verbose
+CUDA_VISIBLE_DEVICES=0,1,2,3 python TrainCodec.py --gpu --train_dataset ../InStereo2K/Train_512.hdf5 --eval_dataset ../InStereo2K/Eval.hdf5 --lambda_weight 1024 --lr 6e-5 --max_epoch 501 --batch 4 --verbose --pretrained Experiments/2022-05-10_01-01/Checkpoints/model_1024_140.pth

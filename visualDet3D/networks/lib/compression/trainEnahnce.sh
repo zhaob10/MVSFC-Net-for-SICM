@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=1 python TrainEnhancement.py --gpu --train_dataset ../InStereo2K/Train_InDoor_512.hdf5 --eval_dataset ../InStereo2K/Eval_InDoor_512.hdf5 --lambda_weight 1024 --lr 8e-4 --max_epoch 1000 --batch 4 --pretrained ./Models/Codec_1024.pth

@@ -1,0 +1,1 @@
+ python TrainEnhancement.py --batch 2 --gpu --train_dataset ../InStereo2K/Train_InDoor_512.hdf5 --eval_dataset ../InStereo2K/Eval_InDoor_512.hdf5 --lambda_weight 8192 --lr 2e-4 --max_epoch 1000 --pretrained ./Codec_8192_new_new.pth
